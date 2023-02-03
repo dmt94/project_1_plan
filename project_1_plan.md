@@ -91,7 +91,7 @@ ___
       - toggles between cherry theme (day) and blueberry theme (night)
   3.2) H3 representing message
     3.2.1) Updates player turn
-    3.2.2) Updates ending
+    3.2.2) Updates ending message
       - winner
       - tie
   3.3) Divs representing "board"
@@ -111,6 +111,7 @@ ___
             - between rows = 2
             - diagonal (left to right) = 9
             - anti-diagonal (right to left) = 7
+        - push diagonal divs into new array that represents movable areas
 
 4) Attach event listeners to buttons available on main screen
   4.1 calls functions that set
@@ -177,12 +178,14 @@ ___
 
   6.3) define methods
     6.3.1) checkCapture()
+      - create mechanism for capture scenario and options depending on if it is player or computer
       - if opponent piece is captured, reduce total piece -= 1
     6.3.2) checkWin()
       define end of game conditions
       - if winner !== null:
-        - change visibility to play again button = hidden
-        - call endGame()
+        - change visibility to play again button = visible
+        - add event listener to play again (function ends game)
+          - calls endGame()
       - win or lose condition
         - win
           - oppponent piece can no longer move or no more opponent piece
@@ -190,7 +193,6 @@ ___
           - no more moves left for current player
       - else tie condition
     6.3.3) endGame()
-      - if winner, game ends
       - winner, turn, = null
       - clearBoard()
       - initialize()
@@ -200,23 +202,17 @@ ___
 
 7) Create a class inheritance of Checkers that represents the game if the "2 Player" option button is clicked
   - update methods that listen to the user's click on the div squares to allow multiple clicks until end game conditions are met
+  - update computer method to copy first player method
 
-
-> Define Initialize and Main render functions that update:
+8) Define Initialize and Main render functions that update:
   - what piece players pick
   - which player makes the first move
   - what game the main player chooses:
-    - 2 player
+    - 2 players
     - Player vs Computer
 
-> Initialize function is immediatelly called first
+9) Initialize function is immediatelly called first
   - calls other functions that render game mechanics:
     - functions that will create a new instance of the class Checkers or its subclass Checkers 2 Player
-
-
-> If end of game conditions are met:
-  - Replay button's visibility is set to "visible"
-  - If clicked:
-    - Initialize function is called, indicating a new game
 
 ```
