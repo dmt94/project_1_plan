@@ -43,10 +43,10 @@ ___
 <b>Main screen</b>
 
 - ##### Light Mode:
-![image info](./images/cherry.png)
+<img src="./images/cherry.png"  width="600">
 
 - ##### Dark Mode:
-![image info](./images/blueberry.png)
+<img src="./images/blueberry.png"  width="600">
 
 ___
 ##### PSEUDOCODE:
