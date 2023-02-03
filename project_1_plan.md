@@ -42,8 +42,11 @@ ___
 ###### FIGMA SCREENSHOT
 <b>Main screen</b>
 
+- ##### Light Mode:
+![image info](./images/cherry.png)
 
-![image info](./images/figma.png)
+- ##### Dark Mode:
+![image info](./images/blueberry.png)
 
 ___
 ##### PSEUDOCODE:
