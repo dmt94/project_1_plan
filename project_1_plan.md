@@ -77,7 +77,7 @@ ___
       }
 
 3) Cache DOM Elements
-  3.1) Buttons
+  3.1) Define Buttons using document.getElementById("");
     3.1.1) "play again" button
     3.1.2) "pick piece" button
       - 2 options
@@ -185,16 +185,17 @@ ___
       - if opponent piece is captured, reduce total piece -= 1
     6.3.2) checkWin()
       define end of game conditions
-      - if winner !== null:
+      - IF winner !== null:
         - change visibility to play again button = visible
         - add event listener to play again (function ends game)
           - calls endGame()
       - win or lose condition
         - win
-          - oppponent piece can no longer move or no more opponent piece
+          - opponent piece can no longer move or no more opponent piece
         - lose
           - no more moves left for current player
-      - else tie condition
+      - tie condition
+      - ELSE return
     6.3.3) endGame()
       - winner, turn, = null
       - clearBoard()
