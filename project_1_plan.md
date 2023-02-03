@@ -116,7 +116,7 @@ ___
             - anti-diagonal (right to left) = 7
         - push diagonal divs into new array that represents movable areas
 
-4) Attach event listeners to buttons available on main screen
+4) Add event listeners to buttons available on main screen
   4.1 calls functions that set
     - day mode / night mode 
       - triggers color theme change
@@ -124,14 +124,14 @@ ___
     - game piece style player chooses
 
 5) Define Square class
-  5.1) define parameters for its constructor to be a domElement
+  5.1) Define parameters for its constructor to be a domElement
   - Square class is instantiated in the the Checkers class
-  5.2) define render method that updates the style of the square depending on its static property matchPlayerPiece key value
+  5.2) Define render method that updates the style of the square depending on its static property matchPlayerPiece key value
     - if piece is captured, the square it represents changes back to "null" color for that diagonal
     - if piece becomes "king", style changes to that
 
 6) Define Checkers class, its properties and methods
-  6.1) define properties
+  6.1) Define properties
     - this.squareDivs (diagonal)
     - this.userKings = []; 
     - this.OpponentKings = []; 
@@ -141,7 +141,7 @@ ___
     - this.userPieceKingRow = [];
     - this.opponentPiecesIdx = [];
     - this.opponentPieceKingRow = [];
-  6.2) define render methods 
+  6.2) Define render methods 
     - render board
     - render check for winner
     - render message
@@ -179,7 +179,7 @@ ___
         - update turn
         - call render()
 
-  6.3) define methods
+  6.3) Define methods
     6.3.1) checkCapture()
       - create mechanism for capture scenario and options depending on if it is player or computer
       - if opponent piece is captured, reduce total piece -= 1
