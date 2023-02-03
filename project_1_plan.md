@@ -1,7 +1,7 @@
 # SEI PROJECT 1: PLANNING STAGE
 ___
 
-### GAME CHOICE: CHECKERS
+<h4>GAME CHOICE: <span style="color:red">CHECKERS</span></h4>
 
 ##### RULES OF CHECKERS:
 - ###### WHO STARTS
@@ -27,7 +27,6 @@ ___
 ___
 ##### (SOME) PLANNED APP FEATURES:
 - As a player, having an option for a 2 player game or a game against a computer would be fun, because it give a more well-rounded gameplay experience.
-<br>
 - As a player, I would appreciate a day/night mode button toggle because it would be beneficial to me if I experience eye strain.
 
 ___
@@ -35,17 +34,21 @@ ___
 
 
 ###### SKELETON SKETCH
-
+![image info](./images/skeleton.jpg)
 
 <hr style="border: none; background-color: #F2F4F7">
+
+
 ###### FIGMA SCREENSHOT
 - <b>Main screen</b>
-- <b>Board view</b>
-- <b>End Game scenario</b>
+![image info](./images/figma.png)
 
 ___
 ##### PSEUDOCODE:
 
 ```
-//Pseudocode goes here
+1. Define constants
+- using document.getElementById(''), grab buttons and cache to respective variables 
+- 
+
 ```
