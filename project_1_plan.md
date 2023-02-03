@@ -40,7 +40,9 @@ ___
 
 
 ###### FIGMA SCREENSHOT
-- <b>Main screen</b>
+<b>Main screen</b>
+
+
 ![image info](./images/figma.png)
 
 ___
